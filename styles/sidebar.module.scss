@@ -1,0 +1,135 @@
+.container {
+  flex: 0.3;
+  top: 120px;
+  gap: 0.5rem;
+  display: flex;
+  transition: 0.2s;
+  position: sticky;
+  height: fit-content;
+  flex-direction: column;
+  max-height: calc(98vh - 200px);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 2px;
+  border-radius: 10px;
+  max-height: 500px;
+  background: var(--sidebar-background);
+  border: 2px solid var(--sidebar-border);
+}
+.content ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  li {
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    padding: 0.6rem;
+    border-radius: 8px;
+    transition: all 200ms linear;
+    &:hover {
+      background-color: var(--sidebar-hover);
+    }
+  }
+}
+
+// FOR RIGHT SIDEBAR
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.4rem;
+  button {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    background: transparent;
+    transition: all 100ms ease-in;
+    border: 1pt solid transparent;
+    &:active {
+      transform: translateY(2px);
+    }
+    &:hover {
+      border-color: #3a3a3a;
+    }
+  }
+}
+
+.image {
+  display: flex;
+  align-items: center;
+  label {
+    display: flex;
+    font-size: 0.8rem;
+    align-items: center;
+    gap: 0.2rem;
+    img {
+      height: 20px;
+      width: 20px;
+      filter: invert(100%);
+    }
+  }
+}
+
+.wraper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  .label {
+    gap: 0.2rem;
+    display: flex;
+    padding: 0.4rem;
+    align-items: center;
+    svg {
+      height: 20px;
+      width: 20px;
+    }
+  }
+  label {
+    font-size: small;
+    color: #ddd;
+  }
+}
+
+.segment {
+  gap: 2px;
+  display: flex;
+  padding: 2px;
+  align-items: center;
+  border-radius: 8px;
+  background-color: var(--sidebar-border);
+  button {
+    flex: 1;
+    padding: 0.4rem;
+    background: transparent;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      background-color: #4f4f4f;
+    }
+  }
+}
+
+.controls {
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  button {
+    flex: 1;
+    background: #2196f3;
+    padding: 0.6rem;
+    border-radius: 8px;
+    transition: all 100ms ease;
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+}
